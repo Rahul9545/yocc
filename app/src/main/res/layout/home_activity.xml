@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/toolbarLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/toolbar" />
+
+    </LinearLayout>
+
+    <!--<FrameLayout-->
+    <!--andrdepartmentIdd:iddepartmentId@+id/content_frame"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_belodepartmentId"@id/toolbarLinearLayout"></FrameLayout>-->
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarLinearLayout"
+        android:background="@color/White"
+        android:clipToPadding="false"
+        android:textAlignment="center"
+        app:tabIndicatorColor="@color/colorAccent"
+        app:tabSelectedTextColor="@color/colorAccent"
+        app:tabTextAppearance="@style/MyTabLayoutStyle"
+        app:tabTextColor="@color/gray" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerTab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabLayout" />
+    <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fl_callify_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="15dp"
+        android:backgroundTint="@color/White"
+        android:elevation="10dp"
+        android:outlineSpotShadowColor="@color/colorPrimary"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/ic_callify"/>
+
+</RelativeLayout>

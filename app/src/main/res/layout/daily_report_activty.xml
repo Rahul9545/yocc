@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_margin_layout"
+            android:layout_marginRight="@dimen/padding_margin_layout"
+            android:layout_marginTop="@dimen/padding_margin_layout"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/padding_margin_layout"
+            android:paddingRight="@dimen/padding_margin_layout">
+
+            <TextView
+                android:id="@+id/display_date_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:maxLines="1"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/secondary_text_size" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="50dp">
+
+            <LinearLayout
+                android:id="@+id/list_layout_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_margin_layout" />
+
+        </ScrollView>
+    </LinearLayout>
+
+
+    <SlidingDrawer
+        android:id="@+id/report_sliding_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_alignParentBottom="true"
+        android:content="@+id/content"
+        android:handle="@+id/report_filter_btn"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/report_filter_btn"
+            style="@style/MyButtonStyle"
+            android:text="Filter Calls" />
+
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/button_color"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/White" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_between_items">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Select Date"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/secondary_text_size" />
+
+                    <EditText
+                        android:id="@+id/start_date_time_et"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/componant_layout_padding"
+                        android:background="@drawable/ed_border_dark"
+                        android:editable="false"
+                        android:maxLines="1"
+                        android:text="00-00-0000"
+                        android:textColor="@color/White"
+                        android:textSize="@dimen/main_menu_secondary_txt_size" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/report_search_btn"
+                    style="@style/MyButtonStyle"
+                    android:text="SEARCH" />
+            </LinearLayout>
+        </LinearLayout>
+    </SlidingDrawer>
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_margin_layout">
+
+                <EditText
+                    android:id="@+id/edit_call_details_caller_no_et"
+                    style="@style/MyTextViewStyle"
+                    android:textColor="@color/gray"
+                    android:hint="Caller Number" />
+
+                <EditText
+                    android:id="@+id/edit_call_details_first_name_et"
+                    style="@style/MyTextViewStyle"
+                    android:hint="First Name"
+                    android:inputType="textCapWords" />
+
+                <EditText
+                    android:id="@+id/edit_call_details_middle_name_et"
+                    style="@style/MyTextViewStyle"
+                    android:hint="Middle Name"
+                    android:inputType="textCapWords" />
+
+                <EditText
+                    android:id="@+id/edit_call_details_last_name_et"
+                    style="@style/MyTextViewStyle"
+                    android:hint="Last Name"
+                    android:inputType="textCapWords" />
+
+                <EditText
+                    android:id="@+id/edit_call_details_address_et"
+                    style="@style/MyTextViewStyle"
+                    android:hint="Address" />
+
+                <EditText
+                    android:id="@+id/edit_call_details_email_et"
+                    style="@style/MyTextViewStyle"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress" />
+
+                <Spinner
+                    android:id="@+id/edit_call_details_call_type_sp"
+                    style="@style/MySpinnerStyle" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/edit_call_details_followup_chk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Follow-Up On"
+                        android:textSize="@dimen/secondary_text_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="horizontal"
+                        android:paddingRight="@dimen/padding_margin_layout">
+
+                        <ImageView
+                            android:id="@+id/edit_call_details_remark_list_iv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@android:drawable/ic_search_category_default" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edit_call_details_select_follow_up_date"
+                    style="@style/MyTextViewStyle"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:hint="Select follow-up date time" />
+
+                <EditText
+                    android:id="@+id/edit_call_details_remark"
+                    style="@style/MyTextViewStyle"
+                    android:hint="Remark" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/change_password_btn"
+        style="@style/MyButtonStyle"
+        android:text="Save" />
+</RelativeLayout>

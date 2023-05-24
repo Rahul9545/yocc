@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_margin_layout"
+        app:cardCornerRadius="@dimen/cardview_radius">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_margin_layout"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_margin_layout"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="Caller Details"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/secondary_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/call_transcription_adp_caller_name_number_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:textSize="@dimen/secondary_text_size" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".02dp"
+                android:layout_margin="@dimen/padding_margin_layout"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_margin_layout"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="Menu"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/secondary_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/call_transcription_adp_menu_name_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:textSize="@dimen/secondary_text_size" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".02dp"
+                android:layout_margin="@dimen/padding_margin_layout"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_margin_layout"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="Agent Details"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/secondary_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/call_transcription_adp_agent_name_number_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:textSize="@dimen/secondary_text_size" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".02dp"
+                android:layout_margin="@dimen/padding_margin_layout"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_margin_layout"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="Start Time"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/secondary_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/call_transcription_adp_start_time_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:textSize="@dimen/secondary_text_size" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".02dp"
+                android:layout_margin="@dimen/padding_margin_layout"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_margin_layout"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="End Time"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/secondary_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/call_transcription_adp_end_time_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:textSize="@dimen/secondary_text_size" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".02dp"
+                android:layout_margin="@dimen/padding_margin_layout"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_margin_layout"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="Duration"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/secondary_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/call_transcription_adp_duration_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:textSize="@dimen/secondary_text_size" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height=".02dp"
+                android:layout_margin="@dimen/padding_margin_layout"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_margin_layout"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="Status"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="@dimen/secondary_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/call_transcription_adp_status_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:textSize="@dimen/secondary_text_size" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

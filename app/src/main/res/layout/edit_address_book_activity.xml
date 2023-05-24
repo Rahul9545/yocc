@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_margin_layout">
+
+                <EditText
+                    android:id="@+id/edit_address_book_caller_no_et"
+                    style="@style/MyTextViewStyle"
+                    android:hint="Caller Number *"
+                    android:inputType="number"
+                    android:maxLength="12" />
+
+                <Spinner
+                    android:id="@+id/edit_address_book_group_name_sp"
+                    style="@style/MySpinnerStyle" />
+
+                <EditText
+                    android:id="@+id/edit_address_book_first_name_et"
+                    style="@style/MyTextViewStyle"
+                    android:hint="First Name *"
+                    android:inputType="textCapWords" />
+
+                <EditText
+                    android:id="@+id/edit_address_book_middle_name_et"
+                    style="@style/MyTextViewStyle"
+                    android:hint="Middle Name"
+                    android:inputType="textCapWords" />
+
+                <EditText
+                    android:id="@+id/edit_address_book_last_name_et"
+                    style="@style/MyTextViewStyle"
+                    android:hint="Last Name"
+                    android:inputType="textCapWords" />
+
+                <EditText
+                    android:id="@+id/edit_address_book_email_et"
+                    style="@style/MyTextViewStyle"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:id="@+id/edit_address_book_address_et"
+                    style="@style/MyTextViewStyle"
+                    android:hint="Address"
+                    android:inputType="textCapWords" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/change_password_btn"
+        style="@style/MyButtonStyle"
+        android:text="Save" />
+</RelativeLayout>

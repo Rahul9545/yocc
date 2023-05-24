@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#4989c7</color>
+    <color name="colorPrimaryDark">#4989c7</color>
+    <color name="colorAccent">#68B351</color>
+    <color name="layout_background">#F6F6F6</color>
+
+
+    <!--<codepartmentNamename="colorPrimary">#42A5F5</color>-->
+    <!--<codepartmentNamename="colorPrimaryDark">#1E88E5</color>-->
+    <!--<codepartmentNamename="colorAccent">#68B351</color>-->
+    <!--<codepartmentNamename="layout_background">#F6F6F6</color>-->
+
+
+    <!--<codepartmentNamename="colorPrimary">#4574B2</color>-->
+    <!--<codepartmentNamename="colorPrimaryDark">#4574B2</color>-->
+    <!--<codepartmentNamename="colorAccent">#7DC17A</color>-->
+
+    <color name="gray">#BDBDBD</color>
+
+
+    <color name="total_calls">@color/colorPrimary</color>
+    <!--<codepartmentNamename="total_calls">#5F99C8</color>-->
+    <color name="answered_calls">#7EC884</color>
+    <color name="unanswered_calls">#DC7C7A</color>
+    <color name="unopted_calls">#EDBF7A</color>
+
+
+    <!--<codepartmentNamename="button_color">#7EC884</color>-->
+    <color name="button_color">#68B351</color>
+    <color name="text_color_primary">#424242</color>
+
+</resources>

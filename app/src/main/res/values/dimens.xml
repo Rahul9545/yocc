@@ -1,0 +1,16 @@
+<resources>
+
+    <dimen name="componant_layout_padding">10dp</dimen>
+    <dimen name="cardview_radius">3dp</dimen>
+    <dimen name="main_menu_primmery_txt_size">22sp</dimen>
+    <dimen name="button_text_size">20sp</dimen>
+    <dimen name="padding_margin_layout">6dp</dimen>
+    <dimen name="spacing_between_items">22dp</dimen>
+    <dimen name="primery_text_size">16sp</dimen>
+    <dimen name="secondary_text_size">13sp</dimen>
+    <dimen name="settings_text_size">14sp</dimen>
+    <dimen name="large_text_size">40sp</dimen>
+    <dimen name="main_menu_secondary_txt_size">20sp</dimen>
+    <dimen name="graphs_height">250dp</dimen>
+
+</resources>

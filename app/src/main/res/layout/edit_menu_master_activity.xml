@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_margin_layout">
+
+                <EditText
+                    android:id="@+id/menu_mst_menu_name_et"
+                    style="@style/MyTextViewStyle"
+                    android:enabled="false"
+                    android:hint="Menu Name"
+                    android:inputType="textCapWords" />
+
+                <Spinner
+                    android:id="@+id/routing_pattern_sp"
+                    style="@style/MySpinnerStyle" />
+
+                <Spinner
+                    android:id="@+id/routing_type_sp"
+                    style="@style/MySpinnerStyle" />
+
+                <EditText
+                    android:id="@+id/menu_mst_dial_timeout_et"
+                    style="@style/MyTextViewStyle"
+                    android:hint="Dial Timeout"
+                    android:inputType="number"
+                    android:maxLength="2" />
+
+                <EditText
+                    android:id="@+id/menu_mst_menu_desc_et"
+                    style="@style/MyTextViewStyle"
+                    android:enabled="false"
+                    android:hint="Menu Description" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save_btn"
+        style="@style/MyButtonStyle"
+        android:text="Save" />
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_margin_layout"
+            android:layout_marginRight="@dimen/padding_margin_layout"
+            android:layout_marginTop="@dimen/padding_margin_layout"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/padding_margin_layout"
+            android:paddingRight="@dimen/padding_margin_layout">
+
+            <TextView
+                android:id="@+id/display_date_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:maxLines="1"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/secondary_text_size" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/list_layout_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_margin_layout" />
+
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

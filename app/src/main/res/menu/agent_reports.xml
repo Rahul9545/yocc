@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/agent_dashboard"
+        android:title="Agent Dashboard" />
+    <item
+        android:id="@+id/agent_call_details"
+        android:title="Agent Call Details" />
+    <item
+        android:id="@+id/agent_call_summery"
+        android:title="Agent Call Summary" />
+</menu>

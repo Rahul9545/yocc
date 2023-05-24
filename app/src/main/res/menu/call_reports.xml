@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/call_transaction"
+        android:title="Call Transaction" />
+    <item
+        android:id="@+id/call_priority"
+        android:title="Call Priority" />
+    <item
+        android:id="@+id/call_details"
+        android:title="Call Details" />
+    <item
+        android:id="@+id/call_remark"
+        android:title="Call Remark" />
+</menu>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relMainContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_margin_layout">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/spacing_between_items"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logo_loginscreen" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_margin="@dimen/padding_margin_layout"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_margin_layout"
+            android:gravity="center"
+            android:text="Multitasking utility for your business"
+            android:textColor="@color/White"
+            android:textSize="@dimen/secondary_text_size" />
+
+        <EditText
+            android:id="@+id/usernameET"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="@dimen/spacing_between_items"
+            android:gravity="center"
+            android:hint="Username"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@color/White"
+            android:textColorHint="@color/White"
+            android:typeface="normal" />
+
+        <EditText
+            android:id="@+id/passwordET"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="@dimen/spacing_between_items"
+            android:gravity="center"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textColor="@color/White"
+            android:textColorHint="@color/White"
+            android:typeface="normal" />
+
+        <CheckBox
+            android:id="@+id/show_password_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_between_items"
+            android:text="Show Password"
+            android:textColor="@color/White"
+            android:textSize="@dimen/secondary_text_size" />
+
+        <Button
+            android:id="@+id/loginBtn"
+            style="@style/MyButtonStyle"
+            android:layout_marginTop="@dimen/spacing_between_items"
+            android:text="Login" />
+
+        <TextView
+            android:id="@+id/turm_of_use_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_between_items"
+            android:gravity="center"
+            android:text="Terms of use"
+            android:textColor="#ff23729a"
+            android:textSize="@dimen/secondary_text_size" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgBigV"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/padding_margin_layout"
+        android:background="@drawable/big_icon" />
+
+    <TextView
+        android:id="@+id/tvReadMore"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/padding_margin_layout"
+        android:gravity="center"
+        android:text=" Read more  "
+        android:textColor="@color/White"
+        android:textSize="@dimen/third_text_size"
+        android:visibility="gone" />
+</RelativeLayout>

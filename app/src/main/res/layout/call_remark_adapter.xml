@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/padding_margin_layout"
+    android:paddingTop="@dimen/padding_margin_layout"
+    android:weightSum="10">
+
+    <TextView
+        android:id="@+id/call_remark_date_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3.5"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/secondary_text_size" />
+
+    <TextView
+        android:id="@+id/call_remark_follow_up_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3.5"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/secondary_text_size" />
+
+    <TextView
+        android:id="@+id/call_remark_remark_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:paddingLeft="@dimen/padding_margin_layout"
+        android:textSize="@dimen/secondary_text_size" />
+</LinearLayout>

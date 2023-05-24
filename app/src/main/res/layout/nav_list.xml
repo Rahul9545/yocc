@@ -1,0 +1,53 @@
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include layout="@layout/home_activity" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        app:itemIconTint="@color/White"
+        app:itemTextColor="@color/White"
+        app:menu="@menu/drawer_list"
+        app:theme="@style/MyNavigationDrawerStyle">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="41dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="@dimen/spacing_between_items"
+                android:src="@drawable/bigv_logo" />
+
+        </LinearLayout>
+
+    </com.google.android.material.navigation.NavigationView>
+
+    <!--android:layout_marginTop="?attr/actionBarSize"-->
+
+    <!--<android.support.design.widget.NavigationView-->
+    <!--andrdepartmentIdd:iddepartmentId@+id/nav_view"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="start"-->
+    <!--android:fitsSystemWindows="true"-->
+    <!--app:headerLayout="@layout/nav_header"-->
+    <!--app:menu="@menu/drawer_list" />-->
+</androidx.drawerlayout.widget.DrawerLayout>

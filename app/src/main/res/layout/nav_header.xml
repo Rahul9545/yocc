@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/spacing_between_items">
+    <!--android:layout_height="@dimen/navigation_image_height"-->
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_between_items">
+
+        <com.mithsoft.lib.componants.CircleImageView
+            android:id="@+id/navigationUserImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/unknown_person" />
+
+        <TextView
+            android:id="@+id/initialWordNavTextView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/round_textview"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/large_text_size"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/componant_layout_padding"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/navigationUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textColor="@color/White"
+            android:textSize="@dimen/primery_text_size" />
+
+        <TextView
+            android:id="@+id/navigationUserNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textColor="@color/White"
+            android:textSize="@dimen/primery_text_size" />
+
+        <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="1dp"-->
+        <!--android:layout_marginTop="@dimen/padding_margin_layout"-->
+        <!--android:background="@color/blue"-->
+        <!--android:paddingTop="@dimen/padding_margin_layout" />-->
+    </LinearLayout>
+
+
+</LinearLayout>

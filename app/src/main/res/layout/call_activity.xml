@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_margin_layout">
+
+                <EditText
+                    android:id="@+id/call_caller_number_et"
+                    style="@style/MyTextViewStyle"
+                    android:enabled="false"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:hint="Caller Number" />
+
+                <Spinner
+                    android:id="@+id/call_agent_name_sp"
+                    style="@style/MySpinnerStyle" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/call_enter_agent_number_cb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/padding_margin_layout"
+                        android:textSize="@dimen/primery_text_size" />
+
+                    <EditText
+                        android:id="@+id/call_agent_number_et"
+                        style="@style/MyTextViewStyle"
+                        android:enabled="false"
+                        android:hint="Enter Agent Number"
+                        android:inputType="number"
+                        android:maxLength="12" />
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save_btn"
+        style="@style/MyButtonStyle"
+        android:text="Make Call" />
+</RelativeLayout>

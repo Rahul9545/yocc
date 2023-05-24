@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_margin_layout">
+
+                <Spinner
+                    android:id="@+id/agent_replacer_menu_name_sp"
+                    style="@style/MySpinnerStyle" />
+
+                <Spinner
+                    android:id="@+id/agent_replacer_agent_name_sp"
+                    style="@style/MySpinnerStyle" />
+
+                <Spinner
+                    android:id="@+id/agent_replacer_language_sp"
+                    style="@style/MySpinnerStyle" />
+
+                <EditText
+                    android:id="@+id/agent_replacer_sequence_number_et"
+                    style="@style/MyTextViewStyle"
+                    android:enabled="false"
+                    android:hint="Sequence Number" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save_btn"
+        style="@style/MyButtonStyle"
+        android:text="Save" />
+</RelativeLayout>
